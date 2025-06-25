@@ -1,0 +1,22 @@
+{
+  "name": "conversor_temperatura_js",
+  "version": "1.0.0",
+  "description": "Projeto simples para converter temperaturas entre Celsius e Fahrenheit usando HTML, CSS e JavaScript.",
+  "main": "cod/temperatureConverter.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "conversor",
+    "temperatura",
+    "celsius",
+    "fahrenheit",
+    "javascript"
+  ],
+  "author": "Richard Souza",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "type": "module"
+}
