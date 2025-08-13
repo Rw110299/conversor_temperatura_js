@@ -1,22 +1,54 @@
 <!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 -->
 <html lang="pt-BR">
+<!-- Define que o idioma principal da página é Português do Brasil -->
+
 <head>
   <meta charset="UTF-8" />
+  <!-- Define o conjunto de caracteres como UTF-8, permitindo acentos e caracteres especiais -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Ajusta o layout para ser responsivo em dispositivos móveis -->
+
   <title>Conversor de Temperatura</title>
+  <!-- Título da aba do navegador -->
+
   <link rel="stylesheet" href="style.css" />
+  <!-- Importa o arquivo CSS externo que contém os estilos da página -->
 </head>
+
 <body>
+  <!-- Corpo da página -->
+
   <div class="container">
+    <!-- Div principal que agrupa todos os elementos da interface -->
+
     <h1>Conversor de Temperatura</h1>
+    <!-- Título principal da página -->
+
     <input type="number" id="inputTemp" placeholder="Digite a temperatura" />
+    <!-- Campo para o usuário digitar a temperatura.
+         - type="number": permite apenas números (com possibilidade de decimais)
+         - id="inputTemp": usado para identificar o campo no JavaScript
+         - placeholder: texto que aparece como dica antes de digitar -->
+
     <select id="inputScale">
+      <!-- Menu suspenso para escolher a escala de entrada -->
       <option value="celsius">Celsius (°C)</option>
+      <!-- Opção para converter partindo de Celsius -->
       <option value="fahrenheit">Fahrenheit (°F)</option>
+      <!-- Opção para converter partindo de Fahrenheit -->
     </select>
+
     <button id="convertBtn">Converter</button>
+    <!-- Botão que inicia a conversão ao ser clicado -->
+
     <p id="result"></p>
+    <!-- Parágrafo onde será exibido o resultado da conversão -->
   </div>
+
   <script src="script.js" type="module"></script>
+  <!-- Importa o arquivo JavaScript que contém a lógica da conversão.
+       - type="module": permite usar import/export no JavaScript -->
 </body>
 </html>
